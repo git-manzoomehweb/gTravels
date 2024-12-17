@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no,viewport-fit=cover">
+    <title>Gulf Travel and Tourism Agency | 404 </title>
+    <meta name="description" content="Experience the best travel with Gulf Travel, Flydubai Flights, Group Flights, Charter FLights,Travel agency in Dubai">
+    <link rel="canonical" href="[##cms.request.:scheme##]://[##cms.request.full-url##]" />
+    <meta name="og:locale" content="En_Us">
+    <meta property="og:title" content="Gulf Travel Agency">
+    <meta property="og:url" content="[##cms.request.:scheme##]://[##cms.request.full-url##]">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Gulf Travel">
+    <meta property="og:image" content="[##cms.cms.cdn##]/images/logo.png">
+    <meta property="og:image:alt" content="Gulf Travel Logo">
+    <meta property="og:description" content="You can experience the best travel experiences with us as a family">
+    <meta property="og:image:height" content="512">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:type" content="image/png">
+    <meta property="seo:robots" content="index, follow" />
+    <basis core="call" file="PWA.inc" lid="2" />
+    <basis core="call" file="style.inc" lid="2" />
+    <link rel="stylesheet" href="https://cdn.basiscore.net/basisfly.com/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/gulftravel-mob.ui.min.css">
+</head>
+<body>
+    <basis core="call" file="header.inc" lid="2" pageindex="[##cms.cms.pageindex##]" ></basis>
+    <main><section class="w-95per mx-auto flex justify-center items-center h-halfwindow flex-col"><figure><img class="mx-auto object-contain" src="[##cms.cms.cdn##]/images/4XX-mob.jpg" loading="lazy" width="142" height="78" alt="4XX Error"><figcaption><h1 class="text-center text-zinc-900 text-sm font-danaregular capitalize my-6 w-299px">The requested page was not found. </h1></figcaption></figure><a href="/" class="bg-primary-700 font-danaregular text-white capitalize h-50px w-44 text-center leading-50px rounded-lg hover:bg-primary-900 text-base">Go To Home</a></section></main>
+    <basis core="call" file="footer.inc" lid="2" pageindex="[##cms.cms.pageindex##]" ></basis>
+</body>
+</html>

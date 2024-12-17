@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no,viewport-fit=cover">
+    <!-- Title & Description -->
+    <title>agencyName</title>
+    <meta name="description" content="agencyName">
+    <!-- canonical for Homepage -->
+    <link rel="canonical" href="[##cms.request.:scheme##]://[##cms.request.full-url##]" />
+    <!-- fill items with Agancy Info -->
+    <meta name="og:locale" content="">
+    <meta property="og:title" content=" ">
+    <meta property="og:url" content=" ">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content=" ">
+    <meta property="og:image" content=" ">
+    <meta property="og:image:alt" content=" ">
+    <meta property="og:description" content=" ">
+    <meta property="og:image:height" content="512">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:type" content=" ">
+    <meta name="twitter:card" content=" ">
+    <meta name="twitter:site" content=" ">
+    <meta name="twitter:creator" content=" ">
+    <meta name="twitter:image" content=" ">
+    <meta name="twitter:title" content=" ">
+    <meta name="twitter:description" content=" ">
+    <meta property="seo:robots" content="index, follow" />
+    <!-- samandehi-enamad optional -->
+    <meta name="enamad" content="" />
+    <meta name="samandehi" content="" />
+    <!-- pwa metatags -->
+    <basis core="call" file="pwa.inc" />
+    <!-- preload banner images -->
+    <!-- define -->
+    <link rel="preload" as="image" imageSrcSet="image address" fetchpriority="high" />
+    <!-- common styles for all page -->
+    <basis core="call" file="style.inc" />
+
+
+    <link rel="stylesheet" href="https://cdn.basiscore.net/basisfly.com/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+    <header class="bg-white h-75px border-b-4 border-secondary-900 ">
+        <nav class="navbar max-w-7xl mx-auto h-75px pt-4 pb-2 flex justify-between max-xl:w-95per">
+            <div class="hamburgermenu w-419px            
+            max-lg:bg-none  max-lg:fixed max-lg:bottom-0 max-lg:left-0 max-lg:right-0 max-lg:top-0 max-lg:w-full max-lg:flex-col max-lg:transition-all max-lg:ease-in-out 
+            max-lg:bg-white max-lg:h-screen max-lg:overflow-scroll max-lg:z-101 max-lg:duration-300 max-lg:-translate-x-full
+            ">
+                <ul class=" h-55px flex items-center justify-between w-full max-lg:fixed max-lg:top-0 
+                max-lg:block
+                  max-lg:h-full max-lg:w-full
+                  max-lg:divide-y max-lg:divide-primary-50
+                  ">
+                    <li
+                        class="max-lg:bg-primary-900 max-lg:flex max-lg:justify-between max-lg:h-65px max-lg:items-center max-lg:px-3">
+                        <svg onclick="HamburgerMenuAction(this , 'close');" class="hidden max-lg:block" width="48"
+                            height="50" viewBox="0 0 48 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M24.5 11C17.6077 11 12 16.6077 12 23.5C12 30.3923 17.6077 36 24.5 36C31.3923 36 37 30.3923 37 23.5C37 16.6077 31.3923 11 24.5 11Z"
+                                fill="#B9B9B9" />
+                            <path
+                                d="M27.6205 28L29 26.6197L25.8795 23.5L29 20.3842L27.6218 19.0026L24.5 22.121L21.3795 19L20 20.3803L23.1192 23.5L20 26.6158L21.3782 27.9961L24.4987 24.879L27.6205 28Z"
+                                fill="#B9B9B9" />
+                        </svg>
+                        <a class="max-lg:ml-3" href="/" aria-label="home page">
+                            <figure><img class="object-contain" src="./images/logo.png" width="" height=""
+                                    loading="lazy" alt="Gulf Travel"></figure>
+                        </a>
+                    </li>
+                    <li
+                        class="font-danamedium text-base text-zinc-900 hover:text-secondary-900 max-lg:h-10 max-lg:leading-10 max-lg:w-10/12 max-lg:mx-auto max-lg:cursor-pointer max-lg:text-sm max-lg:border-t-0">
+                        <a class="max-lg:w-full" href="/">Home</a>
+                    </li>
+                    <li
+                        class="font-danamedium text-base text-zinc-900 hover:text-secondary-900 max-lg:h-10 max-lg:leading-10 max-lg:w-10/12 max-lg:mx-auto max-lg:cursor-pointer max-lg:text-sm ">
+                        <a class="max-lg:w-full" href="/Flights">Flights</a>
+                    </li>
+                    <li
+                        class="font-danamedium text-base text-zinc-900 hover:text-secondary-900 max-lg:h-10 max-lg:leading-10 max-lg:w-10/12 max-lg:mx-auto max-lg:cursor-pointer max-lg:text-sm ">
+                        <a class="max-lg:w-full" href="/About-us">About Us</a>
+                    </li>
+                    <li
+                        class="font-danamedium text-base text-zinc-900 hover:text-secondary-900 max-lg:h-10 max-lg:leading-10 max-lg:w-10/12 max-lg:mx-auto max-lg:cursor-pointer max-lg:text-sm ">
+                        <a class="max-lg:w-full" href="/Contact-us">Contact Us</a>
+                    </li>
+
+                    <li class="relative cursor-pointer hidden max-lg:block  max-lg:w-10/12 max-lg:mx-auto max-lg:bottom-0 max-lg:left-0 max-lg:right-0 max-lg:relative "
+                        onclick="OpenDropDown(this , 'Lang' , 'language-container','lang-arrow');">
+                        <div class="flex items-center max-lg:justify-between max-lg:w-full">
+                            <figure class="flex items-center">
+                                <img class="object-contain" src="./images/EN-flag.png" width="25" height="26"
+                                    alt="En-Flag">
+                                <figcaption class="text-base text-primary-700 font-danamedium ml-2 ">En</figcaption>
+                            </figure>
+
+                            <svg class="lang-arrow" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M23.9999 29.1642L15.5859 20.7502L16.9999 19.3362L23.9999 26.3362L30.9999 19.3362L32.4139 20.7502L23.9999 29.1642Z"
+                                    fill="#3F3CA5" />
+                            </svg>
+                        </div>
+
+                        <ul
+                            class="language-container bg-white rounded-lg shadow-sm overflow-hidden w-full absolute top-full left-0 hidden">
+                            <li class="px-2 py-2 hover:bg-secondary-50"><a href="/EN" class="flex items-center">
+                                    <figure class="flex items-center">
+                                        <img class="object-contain" src="./images/EN-flag.png" width="25" height="26"
+                                            alt="En-Flag">
+                                        <figcaption class="text-base text-primary-700 font-danamedium ml-2 ">En
+                                        </figcaption>
+                                    </figure>
+
+                                </a></li>
+                            <li class="px-2 py-2 hover:bg-secondary-50"> <a href="/EN" class="flex items-center">
+                                    <figure class="flex items-center">
+                                        <img class="object-contain" src="./images/EN-flag.png" width="25" height="26"
+                                            alt="En-Flag">
+                                        <figcaption class="text-base text-primary-700 font-danamedium ml-2 ">En
+                                        </figcaption>
+                                    </figure>
+
+                                </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="w-292px flex items-center justify-between max-lg:w-full max-lg:gap-x-2">
+
+                <li class="relative cursor-pointer max-lg:hidden"
+                    onclick="OpenDropDown(this , 'Lang' , 'language-container','lang-arrow');">
+                    <div class="flex items-center">
+                        <figure class="flex items-center">
+                            <img class="object-contain" src="./images/EN-flag.png" width="25" height="26" alt="En-Flag">
+                            <figcaption class="text-base text-primary-700 font-danamedium ml-2 ">En</figcaption>
+                        </figure>
+
+                        <svg class="lang-arrow" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M23.9999 29.1642L15.5859 20.7502L16.9999 19.3362L23.9999 26.3362L30.9999 19.3362L32.4139 20.7502L23.9999 29.1642Z"
+                                fill="#3F3CA5" />
+                        </svg>
+                    </div>
+
+                    <ul
+                        class="language-container bg-white rounded-lg shadow-sm overflow-hidden w-full absolute top-full left-0 hidden">
+                        <li class="px-2 py-2 hover:bg-secondary-50"><a href="/EN" class="flex items-center">
+                                <figure class="flex items-center">
+                                    <img class="object-contain" src="./images/EN-flag.png" width="25" height="26"
+                                        alt="En-Flag">
+                                    <figcaption class="text-base text-primary-700 font-danamedium ml-2 ">En</figcaption>
+                                </figure>
+
+                            </a></li>
+                        <li class="px-2 py-2 hover:bg-secondary-50"> <a href="/EN" class="flex items-center">
+                                <figure class="flex items-center">
+                                    <img class="object-contain" src="./images/EN-flag.png" width="25" height="26"
+                                        alt="En-Flag">
+                                    <figcaption class="text-base text-primary-700 font-danamedium ml-2 ">En</figcaption>
+                                </figure>
+
+                            </a></li>
+                    </ul>
+                </li>
+
+                <li onclick="HamburgerMenuAction(this , 'open');"
+                    class="hidden max-lg:w-1/3  max-lg:flex max-lg:justify-start max-lg:items-center">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M32 32H16C15.448 32 15 31.553 15 31C15 30.447 15.448 30 16 30H32C32.552 30 33 30.447 33 31C33 31.553 32.552 32 32 32Z"
+                            fill="#3F3CA5" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M32 18H16C15.448 18 15 17.553 15 17C15 16.447 15.448 16 16 16H32C32.552 16 33 16.447 33 17C33 17.553 32.552 18 32 18Z"
+                            fill="#3F3CA5" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M32 25H16C15.448 25 15 24.553 15 24C15 23.447 15.448 23 16 23H32C32.552 23 33 23.447 33 24C33 24.553 32.552 25 32 25Z"
+                            fill="#3F3CA5" />
+                    </svg>
+                </li>
+
+
+                <li class=" hidden max-lg:w-1/3  max-lg:flex max-lg:justify-center max-lg:items-center">
+                    <a href="/" aria-label="home page">
+                        <figure><img class="object-contain" src="./images/logo.png" width="" height="" loading="lazy"
+                                alt="Gulf Travel"></figure>
+                    </a>
+                </li>
+
+                <li class="max-lg:w-1/3  max-lg:flex max-lg:justify-end max-lg:items-center">
+                    <div class="Login_Information bg-primary-700 text-white hover:bg-primary-900  rounded-lg h-50px w-161px flex items-center 
+                    justify-center text-base font-danaregular">
+                        <!-- for test -->
+                        <span class="btnstyle flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" width="24" height="24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z">
+                                </path>
+                            </svg>
+                            <span>Login / Signup</span>
+                        </span>
+                        <!-- for test -->
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="max-w-7xl mx-auto flex justify-center items-center h-halfwindow flex-col">
+            <figure>
+                <img src="./images/4XX.jpg" width="299" height="163" alt="4XX Error">
+                <figcaption>
+                    <h1 class="text-center text-zinc-900 text-2xl font-danamedium capitalize my-6 w-299px">
+                        The requested page was not found.
+                    </h1>
+                </figcaption>
+            </figure>
+            <a href="/" class="bg-primary-700 text-white capitalize h-50px w-44 text-center leading-50px rounded-lg hover:bg-primary-900">Go To Home</a>
+        </section>
+
+    </main>
+
+    <div class="clear-both"></div>
+    <footer class="h-697px w-full border-t-7px border-primary-700 bg-zinc-50 max-lg:h-auto mt-52 ">
+        <section class="h-315px max-w-7xl mx-auto bg-white  rounded-3xl overflow-hidden -mt-40 shadow-xl max-lg:h-auto">
+            <div class="w-full bg-secondary-900 h-20  flex items-center  max-lg:h-57px">
+                <h3 class="text-primary-700 font-danablack text-2xl mx-8 max-lg:text-sm">SUBSCRIBE <span
+                        class="text-white">FOR THE
+                        LATEST PROMOTIONS</span></h3>
+            </div>
+
+            <div>
+
+                <div
+                    class="w-formsubscribe h-80 float-left mx-8 bg-zinc-100 max-lg:float-none max-lg:w-formsubscribemob">
+                    test
+                </div>
+
+                <figure class="-mt-69px mr-12 float-right max-lg:float-none max-lg:-mt-0 max-lg:mr-0">
+                    <img class="w-363px h-304px object-contain max-lg:mx-auto " src="./images/footer-form.png"
+                        width="363" height="304" alt="footer-subscribe-form">
+                </figure>
+
+            </div>
+
+        </section>
+        <div class="h-footerinfo max-w-7xl mx-auto max-xl:w-11/12">
+            <a href="/" class="mt-14 inline-block max-lg:justify-center max-lg:flex">
+                <figure>
+                    <img class="object-contain" src="./images/logo-full.png" width="235" height="40" alt="Gulf Travel">
+                </figure>
+            </a>
+            <div class="clear-both"></div>
+            <div
+                class="h-232px divide-x divide-primary-100 flex justify-between mt-12 max-lg:flex-col max-lg:justify-center max-lg:w-full max-lg:h-auto max-lg:divide-x-0 ">
+                <section class="w-1/3 max-lg:mb-6 max-lg:w-full pr-4 max-lg:pr-0 ">
+                    <h3 class="text-xl text-primary-700 font-danabold leading-34px border-primary-100 border-b">About us
+                    </h3>
+                    <div class="text-sm leading-24px font-danaregular mt-2 line-clamp-8">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae
+                        congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi
+                        porta lorem mo Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in Lorem ipsum dolor
+                        sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae
+                        congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi
+                        porta lorem mo Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in
+                    </div>
+                </section>
+                <div class="w-1/3 max-lg:mb-6 max-lg:w-full px-4 flex justify-between max-lg:px-0">
+                    <section class="w-1/3 max-lg:w-full">
+                        <h3 class="text-xl text-primary-700 font-danabold leading-34px border-primary-100 border-b">
+                            categories</h3>
+                        <ul class="mt-2">
+                            <li class="text-sm leading-24px mb-10px font-danaregular hover:text-primary-600 ">
+                                <a class="w-full block" href="/">test</a>
+                            </li>
+                            <li class="text-sm leading-24px mb-10px font-danaregular hover:text-primary-600 ">
+                                <a class="w-full block" href="/">test</a>
+                            </li>
+                            <li class="text-sm leading-24px mb-10px font-danaregular hover:text-primary-600 ">
+                                <a class="w-full block" href="/">test</a>
+                            </li>
+                            <li class="text-sm leading-24px mb-10px font-danaregular hover:text-primary-600 ">
+                                <a class="w-full block" href="/">test</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="w-1/3 max-lg:w-full">
+                        <h3 class="text-xl text-primary-700 font-danabold leading-34px border-primary-100 border-b">
+                            categories</h3>
+                        <ul class="mt-2">
+                            <li class="text-sm leading-24px mb-10px font-danaregular hover:text-primary-600 ">
+                                <a class="w-full block" href="/">test</a>
+                            </li>
+                            <li class="text-sm leading-24px mb-10px font-danaregular hover:text-primary-600 ">
+                                <a class="w-full block" href="/">test</a>
+                            </li>
+                            <li class="text-sm leading-24px mb-10px font-danaregular hover:text-primary-600 ">
+                                <a class="w-full block" href="/">test</a>
+                            </li>
+                            <li class="text-sm leading-24px mb-10px font-danaregular hover:text-primary-600 ">
+                                <a class="w-full block" href="/">test</a>
+                            </li>
+                        </ul>
+                    </section>
+
+                </div>
+                <section class="w-1/3 max-lg:w-full pl-4 max-lg:pl-0 ">
+                    <h3 class="text-xl text-primary-700 font-danabold leading-34px border-primary-100 border-b">Office
+                    </h3>
+                    <ul class="mt-2">
+                        <li class="text-sm leading-24px font-danaregular group/addressinfo mb-27px">
+                            <a href="tel:" class="flex items-center">
+                                <svg class="mr-2 " width="31" height="30" viewBox="0 0 31 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M14.7477 15.5905C19.734 20.5755 20.8652 14.8084 24.0401 17.981C27.1009 21.0409 28.86 21.654 24.9821 25.5309C24.4963 25.9213 21.41 30.6178 10.5638 19.7746C-0.28384 8.93 4.40999 5.84056 4.80047 5.35494C8.68784 1.46731 9.29034 3.23673 12.3511 6.29666C15.526 9.47062 9.76133 10.6055 14.7477 15.5905Z"
+                                        fill="#F47222" />
+                                </svg>
+                                <span class="font-danaregular text-sm  group-hover/addressinfo:text-primary-600 ">
+                                    +971-123456789
+                                    +971-123456789
+                                </span></a>
+
+                        </li>
+                        <li class="text-sm leading-24px font-danaregular group/addressinfo mb-27px">
+                            <a href="mailto:" class="flex items-center">
+                                <svg class="mr-2 " width="31" height="30" viewBox="0 0 31 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M22.5805 19.6955C22.4018 19.8543 22.1805 19.9318 21.958 19.9318C21.7005 19.9318 21.443 19.8255 21.2568 19.618L17.7605 15.6843L17.5443 15.858C16.8643 16.3668 16.0918 16.6205 15.3243 16.6205C14.563 16.6205 13.8055 16.3718 13.1443 15.8743L12.968 15.7343L9.39801 19.628C9.21426 19.8293 8.96051 19.9318 8.70676 19.9318C8.48051 19.9318 8.25301 19.8505 8.07426 19.6855C7.69176 19.3368 7.66551 18.743 8.01676 18.3618L11.5005 14.5605L8.12051 11.858C7.71676 11.5342 7.65176 10.9455 7.97426 10.5405C8.30051 10.1367 8.88926 10.073 9.29301 10.393L14.293 14.393C14.933 14.8743 15.728 14.8743 16.3955 14.3755L21.3718 10.393C21.7768 10.073 22.3655 10.1367 22.6905 10.5405C23.0143 10.9455 22.948 11.5342 22.5443 11.858L19.2268 14.5118L22.658 18.3718C23.003 18.7593 22.968 19.3518 22.5805 19.6955ZM20.833 4.25049H9.83301C6.13926 4.25049 3.45801 7.14299 3.45801 11.1255V18.8755C3.45801 22.7943 6.19801 25.7505 9.83301 25.7505H20.833C24.5268 25.7505 27.208 22.858 27.208 18.8755V11.1255C27.208 7.20674 24.4668 4.25049 20.833 4.25049Z"
+                                        fill="#F47222" />
+                                </svg>
+                                <span class="font-danaregular text-sm  group-hover/addressinfo:text-primary-600 ">
+                                    test@gmail.com
+                                </span></a>
+                        </li>
+                        <li class="text-sm leading-24px font-danaregular group/addressinfo mb-27px">
+                            <a href="" class="flex items-center"><svg class="mr-2 " width="31" height="30"
+                                    viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M14.7578 16.4136C13.0028 16.4136 11.5744 14.9851 11.5744 13.2301C11.5744 11.4751 13.0028 10.0467 14.7578 10.0467C16.5128 10.0467 17.9401 11.4751 17.9401 13.2301C17.9401 14.9851 16.5128 16.4136 14.7578 16.4136ZM14.7578 4.03857C9.65207 4.03857 5.49707 8.19357 5.49707 13.3005C5.49707 19.8036 13.1032 25.9617 14.7578 25.9617C16.4125 25.9617 24.0186 19.8036 24.0186 13.3005C24.0186 8.19357 19.8636 4.03857 14.7578 4.03857Z"
+                                        fill="#F47222" />
+                                </svg>
+                                <span class="font-danaregular text-sm  group-hover/addressinfo:text-primary-600 ">
+                                    Dubai, United Arab Emirates
+                                </span></a>
+                        </li>
+                    </ul>
+
+                </section>
+            </div>
+
+            <div class="mt-11 max-lg:my-6">
+                <ul class="flex justify-center w-full gap-x-4 ">
+                    <li class="group/socialmedia"><a href="" aria-label="instagram">
+                            <img class="object-contain w-12 h-12 grayscale group-hover/socialmedia:grayscale-0"
+                                src="./images/instagram_media_icon.png" width="48" height="48" alt="social-media">
+                        </a></li>
+                    <li class="group/socialmedia"><a href="" aria-label="facebook">
+                            <img class="object-contain w-12 h-12 grayscale group-hover/socialmedia:grayscale-0"
+                                src="./images/facebook_media_icon.png" width="48" height="48" alt="social-media">
+                        </a></li>
+                    <li class="group/socialmedia"><a href="" aria-label="youtube">
+                            <img class="object-contain w-12 h-12 grayscale group-hover/socialmedia:grayscale-0"
+                                src="./images/youtube_media_icon.png" width="48" height="48" alt="social-media">
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="w-full h-16 bg-zinc-100">
+            <div class="max-w-7xl mx-auto ">
+                <div
+                    class="flex justify-between items-center h-16 w-95per mx-auto max-sm:flex-wrap max-sm:justify-center max-sm:flex-col max-sm:gap-y-3 ">
+                    <div class="flex items-center">
+                        <a class="text-xs text-zinc-900 hover:text-primary-600" href="https://basisfly.ae/"
+                            target="_blank" rel="noopener">Web
+                            Design & Online Reservation By</a>
+                        <a class="ml-3" href="https://basisfly.ae/" target="_blank" rel="noopener"><img
+                                class="object-contain" src="./images/basisfly-logo.png" width="68" height="17"
+                                alt="basisfly-logo"></a>
+                    </div>
+                    <img class="object-contain" src="./images/Trust_logo.png" width="90" height="15" alt="Trust-logo">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.basiscore.net/basisfly.com/js/swiper-bundle.min.js"></script>
+    <script src="./gulftravel-core.js"></script>
+
+<script>
+    var swiper = new Swiper(".swiper-persons", {
+        slidesPerView: "auto",
+        speed: 400,
+        // centeredSlides: true,
+        spaceBetween: 7,
+        grabCursor: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        loop: true,
+    });
+</script>
+</body>
+
+</html>

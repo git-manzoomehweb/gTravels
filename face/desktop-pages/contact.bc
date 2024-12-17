@@ -1,0 +1,88 @@
+<basis core="dbsource" name="db" source="basiscore" lid="2" mid="1" usedforid="2370487"><member name="contactusinfo" type="view"></member></basis>
+<basis core="dbsource" name="db" source="basiscore" lid="2" mid="1" usedforid="2370447"><member name="gulftravel" type="view"></member></basis>
+<basis core="dbsource" name="db" source="basiscore" lid="2" mid="1" usedforid="2370448"><member name="ticketsandfares" type="view"></member></basis>
+<basis core="dbsource" name="db" source="basiscore" lid="2" mid="1" usedforid="2370450"><member name="baggage" type="view"></member></basis>
+<basis core="dbsource" name="db" source="basiscore" lid="2" mid="1" usedforid="2370451"><member name="payment" type="view"></member></basis>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no,viewport-fit=cover">
+    <!-- Title & Description -->
+    <title>[##cms.seo.title|(Gulf Travel)##]</title>
+    <meta name="description" content="[##cms.seo.description|(Gulf Travel)##]">
+    <!-- Title & Description -->
+    <basis core="dbsource" source="hosting" name="tag" urlid="[##cms.seo.urlid##]"><member type="list" name="list" request="taglist" preview=""></member></basis><basis core="print" datamembername="tag.list"><face filter="key='canonical'"><link rel="canonical" href="@value" /></face><face><meta property="@key" content="@value" /></face></basis>
+    <!-- pwa metatags -->
+    <basis core="call" file="PWA.inc" lid="2" />
+    <!-- common styles for all page -->
+    <basis core="call" file="style.inc" lid="2" />
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/gulftravel.ui.min.css">
+</head>
+<body>
+    <basis core="call" file="header.inc" lid="2"></basis>
+    <main class=" mb-7">
+        <section
+            class="max-w-7xl mx-auto max-xl:w-95per bg-hero-contact-pattern bg-center bg-contain h-441px bg-no-repeat mt-48 banner">
+            <h1 class="invisible">Gulf Travel | الخلیج للسفر</h1>
+        </section>
+        <div class="max-w-7xl mx-auto max-xl:w-95per flex justify-between mt-16 max-xl:flex-wrap">
+            <section class="w-1/3 max-lg:w-full pl-4 max-lg:pl-0 "><h3 class="text-xl text-zinc-900 font-danabold leading-34px border-primary-100 border-b">Office </h3><ul class="mt-2"><basis core="print" datamembername="db.info"><layout><li class="text-sm leading-24px font-danaregular group/addressinfo mb-5"><div class="flex items-center"><svg class="mr-2 " width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.7477 15.5905C19.734 20.5755 20.8652 14.8084 24.0401 17.981C27.1009 21.0409 28.86 21.654 24.9821 25.5309C24.4963 25.9213 21.41 30.6178 10.5638 19.7746C-0.28384 8.93 4.40999 5.84056 4.80047 5.35494C8.68784 1.46731 9.29034 3.23673 12.3511 6.29666C15.526 9.47062 9.76133 10.6055 14.7477 15.5905Z" fill="#F47222" /></svg>@child </div></li></layout><face filter="TypeID in(240)"><a href="tel:@text" class="font-danaregular text-base hover:text-primary-600 mr-2">@text </a></face></basis><basis core="print" datamembername="db.info"><face filter="TypeID in(242)"><li class="text-sm leading-24px font-danaregular group/addressinfo mb-5"><a href="mailto:@text" class="flex items-center"><svg class="mr-2 " width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M22.5805 19.6955C22.4018 19.8543 22.1805 19.9318 21.958 19.9318C21.7005 19.9318 21.443 19.8255 21.2568 19.618L17.7605 15.6843L17.5443 15.858C16.8643 16.3668 16.0918 16.6205 15.3243 16.6205C14.563 16.6205 13.8055 16.3718 13.1443 15.8743L12.968 15.7343L9.39801 19.628C9.21426 19.8293 8.96051 19.9318 8.70676 19.9318C8.48051 19.9318 8.25301 19.8505 8.07426 19.6855C7.69176 19.3368 7.66551 18.743 8.01676 18.3618L11.5005 14.5605L8.12051 11.858C7.71676 11.5342 7.65176 10.9455 7.97426 10.5405C8.30051 10.1367 8.88926 10.073 9.29301 10.393L14.293 14.393C14.933 14.8743 15.728 14.8743 16.3955 14.3755L21.3718 10.393C21.7768 10.073 22.3655 10.1367 22.6905 10.5405C23.0143 10.9455 22.948 11.5342 22.5443 11.858L19.2268 14.5118L22.658 18.3718C23.003 18.7593 22.968 19.3518 22.5805 19.6955ZM20.833 4.25049H9.83301C6.13926 4.25049 3.45801 7.14299 3.45801 11.1255V18.8755C3.45801 22.7943 6.19801 25.7505 9.83301 25.7505H20.833C24.5268 25.7505 27.208 22.858 27.208 18.8755V11.1255C27.208 7.20674 24.4668 4.25049 20.833 4.25049Z" fill="#F47222" /></svg><span class="font-danaregular text-base group-hover/addressinfo:text-primary-600 ">@text </span></a></li></face></basis><basis core="print" datamembername="db.info"><face filter="TypeID in(244)"><li class="text-sm leading-24px font-danaregular group/addressinfo mb-5"><a href="http://maps.google.com/?q=@largetext" class="flex items-center"><svg class="mr-2 footer-icons" width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.7578 16.4136C13.0028 16.4136 11.5744 14.9851 11.5744 13.2301C11.5744 11.4751 13.0028 10.0467 14.7578 10.0467C16.5128 10.0467 17.9401 11.4751 17.9401 13.2301C17.9401 14.9851 16.5128 16.4136 14.7578 16.4136ZM14.7578 4.03857C9.65207 4.03857 5.49707 8.19357 5.49707 13.3005C5.49707 19.8036 13.1032 25.9617 14.7578 25.9617C16.4125 25.9617 24.0186 19.8036 24.0186 13.3005C24.0186 8.19357 19.8636 4.03857 14.7578 4.03857Z" fill="#F47222" /></svg><span class="font-danaregular text-base group-hover/addressinfo:text-primary-600 ">@largetext </span></a></li></face></basis></ul></section>
+            <section class="w-2/3 max-lg:w-full border-l border-primary-100 ml-5 pl-5">
+                <h3 class="text-xl text-zinc-900 font-danabold leading-34px" >Be In Touch With Us</h3>
+                <div id="contact-form-Contactpage">
+                    <div
+                    class="free-form-container form-container w-[1024px] flex flex-wrap justify-between flex-wrap mt-7 mr-12 max-xl:flex-col max-xl:w-full max-xl:mr-auto">
+                    <basis core="schema" run="atclient"
+                        schemaurl="/schema/domainform/560DCC85-DE5A-487C-AC8B-41D5675E41D0/DED4AAD1-C903-45B7-BF65-ED5B19914CC8/en/contact-us"
+                        displaymode="new" button="[data-btn-uploadcontact2]" resultsourceid="uploadcontact2.data"
+                        onrendered="RenderFormContact2"></basis>
+                    <basis core="api" if="{##cms.uploadcontact2.run|(false)##}" run="atclient"
+                        url="/schema/domainform/560DCC85-DE5A-487C-AC8B-41D5675E41D0/en/editobject" method="post"
+                        body="object_edit={##cms.uploadcontact2.value##}&captcha={##cms.uploadcontact2.captcha##}&captchaid={##cms.uploadcontact2.captchaid##}"
+                        content-type="application/x-www-form-urlencoded" triggers="cms.uploadcontact2"
+                        onprocessed="OnProcessedEditObjectcontact2"></basis>
+                    <div class="free-form-content">
+                        <div id="captchaContainercontact2" class="captchaContainerclass captcha-sefaresh"
+                            data-bc-answer-container data-bc-schema-info-multi="0" data-bc-schema-info-word="58"
+                            data-bc-schema-info-part="1" data-bc-schema-info-part-0-type="text">
+                            <basis core="dbsource" source="trust_login" name="captcha" run="atclient"
+                                triggers="captcha.refresh">
+                                <member name="code" type="scalar" request="captcha"></member>
+                            </basis>
+                            <basis datamembername="captcha.code" core="print" run="atclient"
+                                onrendered="captchaRenderedcontact">
+                                <face>
+                                    <script
+                                        type="text/template"><div class="flex justify-between"> <div><input type="text"  class="contactUsInput codeinputm" placeholder="Security Code" name="captcha" maxlength="4" /><input type="hidden" name="captchaid" value="@captcha@" /></div><div class="flex flex-row-reverse items-center"><svg class="cursor-pointer inline-block" width="35" height="25" onclick="refreshCaptchacontact2()" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.6498 3.34999C12.0198 1.71999 9.70978 0.779992 7.16978 1.03999C3.49978 1.40999 0.479777 4.38999 0.0697772 8.05999C-0.480223 12.91 3.26978 17 7.99978 17C11.1898 17 13.9298 15.13 15.2098 12.44C15.5298 11.77 15.0498 11 14.3098 11C13.9398 11 13.5898 11.2 13.4298 11.53C12.2998 13.96 9.58978 15.5 6.62978 14.84C4.40978 14.35 2.61978 12.54 2.14978 10.32C1.30978 6.43999 4.25978 2.99999 7.99978 2.99999C9.65978 2.99999 11.1398 3.68999 12.2198 4.77999L10.7098 6.28999C10.0798 6.91999 10.5198 7.99999 11.4098 7.99999H14.9998C15.5498 7.99999 15.9998 7.54999 15.9998 6.99999V3.40999C15.9998 2.51999 14.9198 2.06999 14.2898 2.69999L13.6498 3.34999Z" fill="#000000" /></svg><img class="inline-block" src="/@captcha@" width="100" height="50" alt="captcha code" /></div></div></script>
+                                </face>
+                            </basis>
+                        </div>
+                    </div>
+                    <basis core="callback" run="atclient" method="uploadDocumentcontact2" triggers="uploadcontact2.data"></basis>
+                    <div
+                        class="text-center bg-primary-700 rounded-lg text-white h-50px leading-50px w-161px hover:bg-primary-900">
+                        <button class="data-body-btn w-full h-full" type="button"
+                            data-btn-uploadcontact2><span>Send</span></button></div>
+                    <div class="message-api text-center text-zinc-500 w-full block text-xs max-xl:mt-2 my-6"></div>
+                    <div class="clear-both"></div>
+                </div>
+                </div>
+                
+            </section>
+        </div>
+        <basis core="print" datamembername="db.contactusinfo"><layout><section class="mt-20 max-w-7xl mx-auto max-xl:w-95per">@child </section></layout><face filter="TypeID in(150)"><h2 class="text-3xl font-danabold text-zinc-900">@text </h2></face><face filter="TypeID in(129)"><div class=" text-zinc-900 font-danaregular text-base mt-4">@largetext </div></face></basis>
+        <section id="faq" class="faq-container mt-20 max-w-7xl mx-auto  max-xl:w-95per pb-20">
+            <ul class="faq-categories flex gap-x-2"><li onclick="loadfaqcategory(this , 'gulftravel' );" class="
+                bg-primary-100 text-primary-700
+                min-w-32 rounded-10px px-3 bg-primary-50 h-12 text-center text-zinc-500 leading-48px hover:bg-primary-100 cursor-pointer hover:text-primary-700 font-danamedium text-base">Gulf Travel </li><li onclick="loadfaqcategory(this , 'ticketsandfares' );" class="min-w-32 rounded-10px px-3 bg-primary-50 h-12 text-center text-zinc-500 leading-48px hover:bg-primary-100 cursor-pointer hover:text-primary-700 font-danamedium text-base">Tickets and Fares </li><li onclick="loadfaqcategory(this , 'baggage' );" class="min-w-32 rounded-10px px-3 bg-primary-50 h-12 text-center text-zinc-500 leading-48px hover:bg-primary-100 cursor-pointer hover:text-primary-700 font-danamedium text-base">Baggage </li><li onclick="loadfaqcategory(this , 'payment' );" class="min-w-32 rounded-10px px-3 bg-primary-50 h-12 text-center text-zinc-500 leading-48px hover:bg-primary-100 cursor-pointer hover:text-primary-700 font-danamedium text-base">Payement </li></ul>
+            <basis core="print" datamembername="db.gulftravel"><layout><ul id="gulftravel" class="faq-list w-full mt-4 divide-y divide-primary-50">@child </ul></layout><face filter="RowNumber <>1"><li onclick="toggleFAQ(this)" class="cursor-pointer"><div class="question flex justify-between items-center text-xl font-danamedium text-zinc-900 h-20"><h2>@text</h2><svg class="arrow-faq transition-transform duration-150 ease-in-out" width="24px" height="24px" viewBox="0 0 24 24" fill="none"><path d="M4 12H20M12 4V20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div class="answer-box text-zinc-700 text-sm font-danaregular mb-3 hidden">@largetext </div></li></face></basis>
+            <basis core="print" datamembername="db.ticketsandfares"><layout><ul id="ticketsandfares" class="faq-list w-full mt-4 divide-y divide-primary-50 hidden">@child </ul></layout><face filter="RowNumber <>1"><li onclick="toggleFAQ(this)" class="cursor-pointer"><div class="question flex justify-between items-center text-xl font-danamedium text-zinc-900 h-20"><h2>@text</h2><svg class="arrow-faq transition-transform duration-150 ease-in-out" width="24px" height="24px" viewBox="0 0 24 24" fill="none"><path d="M4 12H20M12 4V20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div class="answer-box text-zinc-700 text-sm font-danaregular mb-3 hidden">@largetext </div></li></face></basis>
+            <basis core="print" datamembername="db.baggage"><layout><ul id="baggage" class="faq-list w-full mt-4 divide-y divide-primary-50 hidden">@child </ul></layout><face filter="RowNumber <>1"><li onclick="toggleFAQ(this)" class="cursor-pointer"><div class="question flex justify-between items-center text-xl font-danamedium text-zinc-900 h-20"><h2>@text</h2><svg class="arrow-faq transition-transform duration-150 ease-in-out" width="24px" height="24px" viewBox="0 0 24 24" fill="none"><path d="M4 12H20M12 4V20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div class="answer-box text-zinc-700 text-sm font-danaregular mb-3 hidden">@largetext </div></li></face></basis>
+            <basis core="print" datamembername="db.payment"><layout><ul id="payment" class="faq-list w-full mt-4 divide-y divide-primary-50 hidden">@child </ul></layout><face filter="RowNumber <>1"><li onclick="toggleFAQ(this)" class="cursor-pointer"><div class="question flex justify-between items-center text-xl font-danamedium text-zinc-900 h-20"><h2>@text</h2><svg class="arrow-faq transition-transform duration-150 ease-in-out" width="24px" height="24px" viewBox="0 0 24 24" fill="none"><path d="M4 12H20M12 4V20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div class="answer-box text-zinc-700 text-sm font-danaregular mb-3 hidden">@largetext </div></li></face></basis>
+        </section>
+    </main>
+    <basis core="call" file="footer.inc" lid="2"></basis>
+</body>
+</html>

@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{font-family: 'Dana_regular';}
+:root {
+  /* colors */
+  --primary: #383299;
+  --primary-50: #e9eaf7;
+  --primary-100: #c8caeb;
+  --primary-200: #a4a8de;
+  --primary-300: #8185d1;
+  --primary-400: #666ac6;
+  --primary-500: #4e4fbc;
+  --primary-600: #4846b1;
+  --primary-700: #383299;
+  --primary-800: #383299;
+  --primary-900: #2b1e84;
+
+  --secondary: #f47322;
+  --secondary-50: #fef8e2;
+  --secondary-100: #feebb6;
+  --secondary-200: #fdde89;
+  --secondary-300: #fcd35b;
+  --secondary-400: #fbc83d;
+  --secondary-500: #fabf2f;
+  --secondary-600: #f9b12b;
+  --secondary-700: #f89f28;
+  --secondary-800: #f78f25;
+  --secondary-900: #f47222;
+
+  --gradient-from-card: #FFEDE1;
+  --gradient-to-card: #E4E3FE;
+}
+
+@font-face{font-display:swap;font-family:"Dana_bold";font-style:normal;src:url(../_fonts/Dana-bold.woff) format("woff"),url(../_fonts/Dana-bold.woff2) format("woff2")}
+@font-face{font-display:swap;font-family:"Dana_black";font-style:normal;src:url(../_fonts/Dana-black.woff) format("woff"),url(../_fonts/Dana-black.woff2) format("woff2")}
+@font-face{font-display:swap;font-family:"Dana_medium";font-style:normal;src:url(../_fonts/Dana-medium.woff) format("woff"),url(../_fonts/Dana-medium.woff2) format("woff2"),url(../_fonts/dana-fanum-medium.eot) format("embedded-opentype")}
+@font-face{font-display:swap;font-family:"Dana_regular";font-style:normal;src:url(../_fonts/Dana-regular.woff) format("woff"),url(../_fonts/Dana-regular.woff2) format("woff2")}
+@font-face{font-display:swap;font-family:"Dana_ExtraBold";font-style:normal;src:url(../_fonts/Dana-ExtraBold.woff) format("woff"),url(../_fonts/Dana-ExtraBold.woff2) format("woff2")}
+
+.divide-y>:not([hidden]) ~:not([hidden]){--tw-divide-y-reverse:0;border-top-width:calc(1px * calc(1 - var(--tw-divide-y-reverse)));border-bottom-width:calc(1px * var(--tw-divide-y-reverse))}.divide-gray-100>:not([hidden]) ~:not([hidden]){--tw-divide-opacity:1;border-color:rgb(243 244 246 / var(--tw-divide-opacity,1))}
+::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:var(--primary-50)}::-webkit-scrollbar-thumb{background:var(--primary-400);border-radius:5px}::-webkit-scrollbar-thumb:hover{background:var(--primary-500)}html,.CountPassenger,.overflow-auto{scrollbar-width:thin!important;scrollbar-color:var(--primary-400) var(--primary-50)}
+/* customize slider */
+ .swiper-busy-cities{display:flex;align-items:center;justify-content:center;height:260px}
+ .swiper-busy-cities .swiper-slide{transition:transform .3s ease,height .3s ease;position:relative;width:150px!important;
+  height:260px!important;border-radius:20px;overflow:hidden}
+  .swiper-busy-cities .swiper-slide .frame{margin:25px 0;height: 260px;}
+  .swiper-busy-cities .swiper-slide-active{width:182px!important}
+  .swiper-busy-cities .swiper-slide-active .frame{margin:0;width:182px;height:260px;background-image:url("./images/window-airplane.png");background-size:cover;background-position:center;background-repeat:no-repeat;z-index:5;display:flex;align-items:center;justify-content:center}
+  .swiper-busy-cities .swiper-slide img{position:absolute;z-index:1;opacity:.5}
+  .swiper-busy-cities .swiper-slide-active img{position:absolute;z-index:-1;opacity:1;border-radius: 94px;}
+  .swiper-busy-cities .info{width:20%;margin-left:20px;float:left}
+  .swiper-busy-cities #title{font-size:24px;margin-bottom:10px}
+  .swiper-busy-cities #text{font-size:16px;margin-bottom:20px}
+/* customize slider */
+
+.disabled-to-date{opacity:30%}
+.scroll-thin{scrollbar-width:thin}
+.active-r-btn{color: var(--primary-700);background-color: var(--primary-100);}
+input{border:none!important;outline:none!important}
+select{scrollbar-width: thin;}
+
+.deactive-addmc{border-color: #ccc !important;color: #ccc !important;}
+.deactive-addmc:hover{border-color: #ccc !important;color: #ccc !important;background-color: white !important;}

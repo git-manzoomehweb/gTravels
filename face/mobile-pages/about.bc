@@ -1,0 +1,42 @@
+<basis core="dbsource" name="db" source="basiscore" lid="2" mid="1" usedforid="2370488"><member name="goals" type="view"></member></basis>
+<basis core="dbsource" source="basiscore" name="db" mid="11" lid="2" ><member name="persons" type="list" size="304x253" typeid="159" propertyid="2732" /></basis>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no,viewport-fit=cover">
+    <!-- Title & Description -->
+    <title>[##cms.seo.title|(Gulf Travel)##]</title>
+    <meta name="description" content="[##cms.seo.description|(Gulf Travel)##]">
+    <!-- Title & Description -->
+    <basis core="dbsource" source="hosting" name="tag" urlid="[##cms.seo.urlid##]">
+        <member type="list" name="list" request="taglist" preview=""></member>
+    </basis>
+    <basis core="print" datamembername="tag.list">
+        <face filter="key = 'canonical'">
+            <link rel="canonical" href="@value" />
+        </face>
+        <face>
+            <meta property="@key" content="@value" />
+        </face>
+    </basis>
+    <!-- pwa metatags -->
+    <basis core="call" file="PWA.inc" lid="2" />
+    <!-- common styles for all page -->
+    <basis core="call" file="style.inc"  lid="2"/>
+    <link rel="stylesheet" href="https://cdn.basiscore.net/basisfly.com/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/gulftravel-mob.ui.min.css">
+</head>
+
+<body>
+    <basis core="call" file="header.inc" lid="2" pageindex="[##cms.cms.pageindex##]"></basis>
+    <main class=" mb-7">
+        <h1 class="invisible h-0 w-0" >Gulf Travel</h1>
+        <basis core="print" datamembername="db.info"><layout><section class="w-95per mx-auto mt-10"><h2 class="text-lg font-danamedium text-zinc-900">About Us </h2><div class=" text-zinc-900 font-danaregular text-sm mt-4">@child </div></section></layout><face filter="TypeID in(144)">@largetext</face></basis>
+        <basis core="print" datamembername="db.persons"><layout><section class=" w-95per mx-auto mt-10" id="persons"  ><div class="swiper-persons swiper"><div class="swiper-wrapper">@child </div></div></section></layout><face><article class="w-304px swiper-slide"><figure><img class="rounded-10px w-304px object-cover h-253px" src="[##cms.cms.cdn##]/@00304X00253prp" loading="lazy" width="304" height="253" alt="@prp_2732"><figcaption class="mt-2"><span class="block w-full font-danabold text-zinc-900 text-xl" >@prp_2732</span><span class="block w-full font-danaregular text-zinc-900 text-sm" >@title</span></figcaption></figure></article></face></basis>
+        <basis core="print" datamembername="db.goals"><layout><section class="mt-10 mx-auto w-95per"><h2 class="text-lg font-danabold text-zinc-900">Team's Goal </h2><div class=" text-zinc-900 font-danaregular text-sm mt-4">@child </div></section></layout><face filter="TypeID in(129)">@largetext </face></basis>
+    </main>
+    <script src="https://cdn.basiscore.net/basisfly.com/js/swiper-bundle.min.js"></script>
+    <basis core="call" file="footer.inc" lid="2" pageindex="[##cms.cms.pageindex##]"></basis>
+</body>
+</html>

@@ -1,0 +1,1 @@
+    <script src="[##cms.cms.cdn##]/js/gulftravel-core.js"></script>
